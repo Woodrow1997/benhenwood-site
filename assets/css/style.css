@@ -505,3 +505,14 @@ p:last-child { margin-bottom: 0; }
   opacity: .55;
   vertical-align: super;
 }
+
+/* ---- Nav divider between internal/external groups ---- */
+.nav-divider {
+  color: var(--border);
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1;
+  align-self: center;
+  padding: 0 .15rem;
+  pointer-events: none;
+}
