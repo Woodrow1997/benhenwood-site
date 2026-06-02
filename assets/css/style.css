@@ -479,14 +479,23 @@ p:last-child { margin-bottom: 0; }
   @page { margin: 1.5cm 2cm; }
 }
 
-/* ---- External link indicators ---- */
-/* Hero nav: add ↗ after external links */
-.hero-nav a[target="_blank"]::after,
-.nav-links a[target="_blank"]::after {
+/* ---- External link indicators in hero nav ---- */
+/* External links: filled solid style to distinguish from internal nav anchors */
+.hero-nav a[target="_blank"] {
+  background: var(--cardinal);
+  color: #fff;
+  border-color: var(--cardinal);
+}
+.hero-nav a[target="_blank"]:hover {
+  background: var(--cardinal-dk);
+  border-color: var(--cardinal-dk);
+  color: #fff;
+  text-decoration: none;
+}
+.hero-nav a[target="_blank"]::after {
   content: " ↗";
   font-size: .7em;
-  opacity: .6;
-  vertical-align: super;
+  opacity: .8;
 }
 
 /* Profile links in About: slightly smaller ↗ */
