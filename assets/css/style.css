@@ -7,8 +7,8 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --cardinal:   #990000;
-  --cardinal-dk:#7a0000;
+  --cardinal:   #2c4a7c;
+  --cardinal-dk:#1e3560;
   --text:       #1a1a1a;
   --muted:      #555;
   --light:      #f7f7f7;
