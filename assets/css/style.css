@@ -517,21 +517,25 @@ p:last-child { margin-bottom: 0; }
   pointer-events: none;
 }
 
-/* ---- Always-visible links in publication/report lists ---- */
-.pub-title a,
+/* ---- Always-visible links in publication/report/media lists ---- */
+.pub-item .pub-title a,
+.pub-item a,
 .report-item a,
 .book-item a,
-.oped-title,
-.media-list a {
-  color: var(--cardinal);
-  text-decoration: underline;
+a.oped-title,
+.media-list a,
+details a {
+  color: var(--cardinal) !important;
+  text-decoration: underline !important;
   text-underline-offset: 2px;
 }
-.pub-title a:hover,
+.pub-item .pub-title a:hover,
+.pub-item a:hover,
 .report-item a:hover,
 .book-item a:hover,
-.oped-title:hover,
-.media-list a:hover {
-  color: var(--cardinal-dk);
-  text-decoration: underline;
+a.oped-title:hover,
+.media-list a:hover,
+details a:hover {
+  color: var(--cardinal-dk) !important;
+  text-decoration: underline !important;
 }
