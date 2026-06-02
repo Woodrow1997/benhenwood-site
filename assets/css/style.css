@@ -516,3 +516,22 @@ p:last-child { margin-bottom: 0; }
   padding: 0 .15rem;
   pointer-events: none;
 }
+
+/* ---- Always-visible links in publication/report lists ---- */
+.pub-title a,
+.report-item a,
+.book-item a,
+.oped-title,
+.media-list a {
+  color: var(--cardinal);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.pub-title a:hover,
+.report-item a:hover,
+.book-item a:hover,
+.oped-title:hover,
+.media-list a:hover {
+  color: var(--cardinal-dk);
+  text-decoration: underline;
+}
