@@ -7,8 +7,8 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --cardinal:   #2c4a7c;
-  --cardinal-dk:#1e3560;
+  --cardinal:   #383838;
+  --cardinal-dk:#1e1e1e;
   --text:       #1a1a1a;
   --muted:      #555;
   --light:      #f7f7f7;
@@ -476,4 +476,22 @@ p:last-child { margin-bottom: 0; }
   .pub-item { font-size: 9.5pt; }
   a { color: var(--text); }
   @page { margin: 1.5cm 2cm; }
+}
+
+/* ---- External link indicators ---- */
+/* Hero nav: add ↗ after external links */
+.hero-nav a[target="_blank"]::after,
+.nav-links a[target="_blank"]::after {
+  content: " ↗";
+  font-size: .7em;
+  opacity: .6;
+  vertical-align: super;
+}
+
+/* Profile links in About: slightly smaller ↗ */
+.profile-links a[target="_blank"]::after {
+  content: " ↗";
+  font-size: .65em;
+  opacity: .55;
+  vertical-align: super;
 }
