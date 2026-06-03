@@ -539,3 +539,76 @@ details a:hover {
   color: var(--cardinal-dk) !important;
   text-decoration: underline !important;
 }
+
+/* ── VISUAL ENHANCEMENTS ──────────────────────────────────────────────── */
+
+/* Hero: subtle warm gradient background */
+#hero {
+  background: linear-gradient(135deg, #fafafa 0%, #f2f2f2 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+/* About section: light warm tint */
+#about {
+  background: #fafafa;
+}
+
+/* Alternating section backgrounds */
+#research { background: #fff; }
+#policy { background: #f7f7f5; }
+#media { background: #fff; }
+#contact { background: #f4f4f2; }
+
+/* Book item: add cover thumbnail layout */
+.book-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+.book-cover {
+  width: 90px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.18), 0 1px 3px rgba(0,0,0,.1);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.book-cover:hover {
+  transform: scale(1.04) rotate(1deg);
+  box-shadow: 0 6px 18px rgba(0,0,0,.22);
+}
+.book-text { flex: 1; }
+
+/* Stats bar: subtle card look */
+.stat-item {
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  transition: box-shadow .2s;
+}
+.stat-item:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+/* Section headings: subtle left accent bar */
+section h2 {
+  padding-left: .75rem;
+  border-left: 4px solid var(--cardinal);
+}
+
+/* Details/summary: visual polish */
+details {
+  border-radius: 5px;
+  overflow: hidden;
+}
+details summary {
+  background: #f4f4f2;
+  padding: .7rem 1rem;
+}
+details summary:hover {
+  background: #ebebeb;
+}
+details[open] summary {
+  background: var(--cardinal);
+  color: #fff;
+}
